@@ -1,5 +1,5 @@
 from pyscript import document, display
-NonMetalicElements = {
+element_Name = {
         "H": ("Hydrogen", 1, 1008),
         "C": ("Carbon", 6, 1201),
         "N": ("Nitrogen", 7, 1401),
@@ -23,15 +23,25 @@ NonMetalicElements = {
 def detailcheck(e):
     document.getElementById("output1").innerHTML = ""   
 
-    Varsity2 = document.getElementById("input1").value
-    var2 = dict.get(NonMetalicElements.get(Varsity2), ("Element not found" , " - " , " - "))
+    element_Naem = document.getElementById("input1").value
+    var2 = element_Name.get(element_Naem, ("Element not found" , " - " , " - "))
 
 
     document.getElementById("output1").innerHTML = f"""
-     Symbol: {NonMetalicElements}
+     Symbol: {element_Naem}
+
      Element: {var2[0]}
+
      Atomic Number: {var2[1]}
+
      Atomic Mass: {var2[2]}
  """
+
+    """
+    References:
+    Skill's test Python guide
+    https://thechemicalelements.com/list-of-non-metal-elements/
+    The heart and dedication of my soul. (trust me.)
+    """
 
     
