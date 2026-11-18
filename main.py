@@ -24,11 +24,11 @@ def detailcheck(e):
     document.getElementById("output1").innerHTML = ""   
 
     Varsity2 = document.getElementById("input1").value
-    var2 = dict.get(Varsity2, ("Element not found" , " - " , " - "))
+    var2 = dict.get(NonMetalicElements.get(Varsity2), ("Element not found" , " - " , " - "))
 
 
     document.getElementById("output1").innerHTML = f"""
-     Symbol: {NonMetalicElements[var2][0]}
+     Symbol: {NonMetalicElements}
      Element: {var2[0]}
      Atomic Number: {var2[1]}
      Atomic Mass: {var2[2]}
